@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Farmer Help Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background: #16a34a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 13px;
+      margin: 5px 0 0 0;
+    }
+
+    .chat-box {
+      max-width: 600px;
+      margin: 15px auto;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .messages {
+      flex: 1;
+      overflow-y: auto;
+      padding-right: 5px;
+    }
+
+    .message {
+      margin: 8px 0;
+      max-width: 80%;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .bot {
+      background: #e5e7eb;
+      align-self: flex-start;
+    }
+
+    .user {
+      background: #dcfce7;
+      align-self: flex-end;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 3px;
+      font-size: 13px;
+    }
+
+    .input-area {
+      display: flex;
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .input-area input {
+      flex: 1;
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .input-area button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      background: #16a34a;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .input-area button:hover {
+      background: #15803d;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>AI Farm Friend</h1>
+    <p>Simple help for Indian farmers (Hindi / English)</p>
+  </header>
+
+  <main class="chat-box">
+    <div class="messages">
+      <div class="message bot">
+        <div class="name">Farm Friend</div>
+        नमस्ते किसान भाई मैं एक साधारण मददगार हूँ। अपनी फसल की समस्या यहाँ लिखिए।
+      </div>
+
+      <div class="message user">
+        <div class="name">You</div>
+        टमाटर की पत्तियाँ पीली हो रही हैं।
+      </div>
+
+      <div class="message bot">
+        <div class="name">Farm Friend</div>
+        अच्छा, आप पहले पानी की मात्रा और खाद के बारे में बताइए, फिर सही सलाह देंगे।
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" placeholder="यहाँ अपना सवाल लिखिए...">
+      <button>Send</button>
+    </div>
+    <div class="hint">
+      अभी के लिए यह डेमो है – बटन दबाने से कुछ नहीं होगा। बाद में JavaScript से सिखाएँगे।
+    </div>
+  </main>
+</body>
+</html>
